@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Student details</h1>
+        <h1>{{ num }}</h1>
+        <h2>{{students}}</h2>
+        <table border="2" style="font-size: larger;">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>Percentage</th>
+            </tr>
+            {% for student in students %}
+            <tr>
+                <td>{{student[0]}}</td>
+                <td>{{student[1]}}</td>
+                <td>{{student[2]}}</td>
+                <td>{{student[3]}}</td>
+                <td><a href="/delete/{{student[0]}}">Delete</a></td>
+                <td><a href="/showstudent/{{student[0]}}">Update</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

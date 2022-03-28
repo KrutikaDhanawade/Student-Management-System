@@ -1,0 +1,29 @@
+<html>
+    <head></head>
+    <body>
+        <form action="/updatestudent" method="post">
+            <table>
+                <tr>
+                    <td>Id</td>
+                    <td><input type="text" name="sid" readonly value="{{student[0]}}"></td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="sname" value="{{student[1]}}"></td>
+                </tr>
+                <tr>
+                    <td>Branch</td>
+                    <td><input type="text" name="branch" value="{{student[2]}}"></td>
+                </tr>
+                <tr>
+                    <td>Percent</td>
+                    <td><input type="text" name="perc" value="{{student[3]}}"></td>
+                </tr>
+                <tr>
+                    <td><input type="reset" value="cancel"></td>
+                    <td><input type="submit" value="Update"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
